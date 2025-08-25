@@ -12,6 +12,10 @@ struct MainView: View {
     //comments
     
     var body: some View {
+        
+        ZStack{
+            Color.red.ignoresSafeArea(.all)
+        
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -19,6 +23,7 @@ struct MainView: View {
             Text("This is a test")
         }
         .padding()
+        }
     }
 }
 
